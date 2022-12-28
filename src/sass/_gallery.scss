@@ -47,18 +47,19 @@
 .gallery_description {
   text-transform: uppercase;
   color: white;
-}
-.gallery_description-breakfast::after {
-  @extend .gallery_description;
-  content: '';
-  position: absolute;
-  width: 53px;
-  height: 4px;
-  top: 45px;
-  left: 0px;
-  // background: $background-color-button-active;
-  border-radius: 2px;
-}
+ }
+// .gallery_description-breakfast::after {
+//   @extend .gallery_description;
+//   content: '';
+ 
+//   position: absolute;
+//   width: 53px;
+//   height: 4px;
+//   top: 0;
+//   left: 0px;
+//   // background: $background-color-button-active;
+//   border-radius: 2px;
+// }
 .gallery_description-lunch {
 }
 .gallery_description-cake {
