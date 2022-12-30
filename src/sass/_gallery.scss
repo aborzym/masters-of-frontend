@@ -40,22 +40,21 @@
   justify-content: space-around;
   padding-inline: 85px;
 }
-.gallery_picture {
-  width: 620px;
- }
-@media screen and (min-width: 768px) {
-  .gallery_picture {
-    height: 435px;
-   }
+.gallery__item {
+  width: 100%;
 }
+.gallery__picture {
+  width: 620px;
+}
+
 .gallery_description {
   text-transform: uppercase;
   color: white;
- }
+}
 // .gallery_description-breakfast::after {
 //   @extend .gallery_description;
 //   content: '';
- 
+
 //   position: absolute;
 //   width: 53px;
 //   height: 4px;
@@ -71,12 +70,54 @@
 .gallery_description-dinners {
 }
 .gallery_tags {
-  background-color: rgba(232, 232, 232, 0.7);
-  color: black;
-  margin-right: 10px;
-  padding-right: 20px;
+  display: none;
 }
 .gallery_tags-list {
-  display: flex;
-  color: white;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    padding-inline: 30px;
+  }
+
+  .gallery__item {
+    width: 310px;
+    align-items: center;
+  }
+  .gallery__picture {
+    height: 435px;
+  }
+  .gallery__image {
+  }
+
+  .gallery_tags-list {
+    display: none;
+  }
+  .gallery_description {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .gallery__list {
+    padding-inline: 50px;
+  }
+  .gallery__item {
+    width: 620px;
+    align-items: center;
+  }
+  .gallery_tags-list {
+    display: flex;
+    color: white;
+  }
+
+  .gallery_tags {
+    display: flex;
+    background-color: rgba(232, 232, 232, 0.7);
+    color: black;
+    margin-right: 10px;
+    padding-right: 20px;
+  }
 }
