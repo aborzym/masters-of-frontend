@@ -1,44 +1,98 @@
 .gallery {
   background-color: $color-first;
 }
+
+//------------------------ MAIN TITLE
 .gallery_title {
+  padding-left: 80px;
   font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #e8e8e8;
+  margin-bottom: 50px;
+}
+//------------------------ MAIN TITLE
+.gallery_title::before {
+  content: 'work';
+  position: absolute;
+  font-style: italic;
+  left: 40px;
+  top: 2px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #e8e8e8;
+}
+.gallery_title::after {
+  content: 'with attention to details';
+  position: absolute;
+  font-style: normal;
+  left: 40px;
+  top: 13px;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 67px;
+  font-size: 28px;
+  line-height: 30px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   color: rgba(232, 232, 232, 0.48);
 }
-.gallery_title-small {
-  font-style: italic;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 38px;
-  display: flex;
-  align-items: center;
-  color: #e8e8e8;
-}
-.gallery_title-front {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 67px;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  color: #e8e8e8;
-}
-.gallery_button {
+
+// .gallery_title {
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 56px;
+//   line-height: 67px;
+//   display: flex;
+//   align-items: center;
+//   text-transform: uppercase;
+//   color: rgba(232, 232, 232, 0.48);
+// }
+// .gallery_title-small {
+//   font-style: italic;
+//   font-weight: 400;
+//   font-size: 28px;
+//   line-height: 38px;
+//   display: flex;
+//   align-items: center;
+//   color: #e8e8e8;
+// }
+// .gallery_title-front {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 56px;
+//   line-height: 67px;
+//   display: flex;
+//   align-items: center;
+//   text-transform: uppercase;
+//   color: #e8e8e8;
+// }
+
+.gallery__button {
+  display: block;
   color: white;
   border-color: white;
 }
+.gallery__button--upper {
+  @extend .gallery__button;
+  margin: 0 auto 30px;
+}
+.gallery__button--bottom {
+  display: none;
+  @extend .gallery__button;
+}
+
 .gallery__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-inline: 85px;
+  padding-left: 40px;
 }
 .gallery__item {
   width: 100%;
@@ -51,18 +105,7 @@
   text-transform: uppercase;
   color: white;
 }
-// .gallery_description-breakfast::after {
-//   @extend .gallery_description;
-//   content: '';
 
-//   position: absolute;
-//   width: 53px;
-//   height: 4px;
-//   top: 0;
-//   left: 0px;
-//   // background: $background-color-button-active;
-//   border-radius: 2px;
-// }
 .gallery_description-lunch {
 }
 .gallery_description-cake {
@@ -75,7 +118,42 @@
 .gallery_tags-list {
   display: none;
 }
+.gallery__image {
+  max-width: 310px;
+  max-width: 100%;
+}
 @media screen and (min-width: 768px) {
+  //------------------------ MAIN TITLE
+  .gallery_title {
+    padding-left: 105px;
+    font-size: 40px;
+    line-height: 43px;
+    margin-bottom: 50px;
+  }
+  //------------------------ MAIN TITLE
+  .gallery_title::before {
+    content: 'work';
+    left: 50px;
+    top: 4px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .gallery_title::after {
+    content: 'with attention to details';
+    left: 50px;
+    top: 20px;
+    font-size: 40px;
+    line-height: 43px;
+  }
+
+  .gallery__button--upper {
+    display: none;
+  }
+  .gallery__button--bottom {
+    display: flex;
+    margin-left: 550px;
+    margin-bottom: 35px;
+  }
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
@@ -101,8 +179,34 @@
   }
 }
 @media screen and (min-width: 1440px) {
+  //------------------------ MAIN TITLE
+  .gallery_title {
+    padding-left: 150px;
+    font-size: 56px;
+    line-height: 60px;
+    margin-bottom: -20px;
+  }
+  //------------------------ MAIN TITLE
+  .gallery_title::before {
+    content: 'work';
+    left: 70px;
+    top: 5px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .gallery_title::after {
+    content: 'with attention to details';
+    left: 70px;
+    top: 30px;
+    font-size: 56px;
+    line-height: 60px;
+  }
+  .gallery__button--bottom {
+    margin-left: 1200px;
+    margin-bottom: 80px;
+  }
   .gallery__list {
-    padding-inline: 50px;
+    padding-inline: 70px;
   }
   .gallery__item {
     width: 620px;

@@ -1,9 +1,17 @@
 <div class="gallery container">
-  <h2 class="gallery_title">
-    <span class="gallery_title-small"> work </span>
-    <span class="gallery_title-front">creating </span> with attention to details
+  <!-- ----UPPER BUTTON WORKS ON MOBILE----- -->
+  <button class="button gallery__button--upper">contact us</button>
+  <!-- ----UPPER BUTTON WORKS ON MOBILE----- -->
+
+  <h2 class="gallery_title" style="position: relative">
+    <!-- <span class="gallery_title-small">work</span> -->
+    <!-- <span class="gallery_title-front" style="position: relative"> -->
+    creating
+    <!-- </span>with attention to details -->
   </h2>
-  <button class="button gallery_button">contact us</button>
+  <!-- ----BOTTOM BUTTON WORKS ON TABLET AND DESCKTOP----- -->
+  <button class="button gallery__button--bottom">contact us</button>
+  <!-- ----BOTTOM BUTTON WORKS ON TABLET AND DESCKTOP----- -->
   <div class="gallery__box-list">
     <ul class="gallery__list">
       <!-------------------------- PANCAKES ----------------------------->
@@ -17,150 +25,155 @@
             media="(min-width:1440px)"
           />
           <source
-                  srcset="
-                    ./images/gallery/pancakes-tablet-1x.jpg,
-                    ./images/gallery/pancakes-tablet-2x.jpg
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="./images/gallery/pancakes-mobile-1x.jpg,
-                  ./images/gallery/pancakes-mobile-2x.jpg"
-                  media="(min-width:480px)"
-                />
+            srcset="
+              ./images/gallery/pancakes-tablet-1x.jpg,
+              ./images/gallery/pancakes-tablet-2x.jpg
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/pancakes-mobile-1x.jpg,
+              ./images/gallery/pancakes-mobile-2x.jpg
+            "
+            media="(min-width:480px)"
+          />
           <img
             class="gallery__image"
-            src="./images/gallery/pancakes-1x.jpg"
+            src="./images/gallery/pancakes-mobile-1x.jpg"
             alt="pancakes"
           />
         </picture>
         <h3 class="gallery_description">
-            <svg class="gallery_description-breakfast" width="16" height="16">
-            <use
-              href="./images/icons-sprite.svg#icon-g-icon-breakfast"
-            ></use></svg>
-            breakfast</h3>
+          <svg class="gallery_description-breakfast" width="16" height="16">
+            <use href="./images/icons-sprite.svg#icon-g-icon-breakfast"></use>
+          </svg>
+          breakfast
+        </h3>
         <div class="gallery_tags-list">
-        <p class="gallery_tags">awaken the metabolism</p>
-        <p class="gallery_tags">energy supply</p>
-        <p class="gallery_tags">necessary ingredients</p>
-    </div>
+          <p class="gallery_tags">awaken the metabolism</p>
+          <p class="gallery_tags">energy supply</p>
+          <p class="gallery_tags">necessary ingredients</p>
+        </div>
       </li>
       <!----------------------------- LUNCH ---------------------->
       <li class="gallery__item">
         <picture class="gallery_picture">
-            <source
-              srcset="
-                ./images/gallery/lunch-1x.jpg,
-                ./images/gallery/lunch-2x.jpg
-              "
-              media="(min-width:1440px)"
-            />
-            <source
-                    srcset="
-                      ./images/gallery/lunch-tablet-1x.jpg,
-                      ./images/gallery/lunch-tablet-2x.jpg
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="./images/gallery/lunch-mobile-1x.jpg,
-                    ./images/gallery/lunch-mobile-2x.jpg"
-                    media="(min-width:480px)"
-                  />
-            <img
-              class="gallery__image"
-              src="./images/gallery/lunch-1x.jpg"
-              alt="pancakes"
-            />
-          </picture>
-          <h3 class="gallery_description"> <svg class="gallery_description-breakfast" width="16" height="16">
-            <use
-              href="./images/icons-sprite.svg#icon-g-icon-square"
-            ></use></svg>lunch</h3>
+          <source
+            srcset="
+              ./images/gallery/lunch-1x.jpg,
+              ./images/gallery/lunch-2x.jpg
+            "
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/lunch-tablet-1x.jpg,
+              ./images/gallery/lunch-tablet-2x.jpg
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/lunch-mobile-1x.jpg,
+              ./images/gallery/lunch-mobile-2x.jpg
+            "
+            media="(min-width:480px)"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/lunch-mobile-1x.jpg"
+            alt="pancakes"
+          />
+        </picture>
+        <h3 class="gallery_description">
+          <svg class="gallery_description-breakfast" width="16" height="16">
+            <use href="./images/icons-sprite.svg#icon-g-icon-square"></use></svg
+          >lunch
+        </h3>
         <div class="gallery_tags-list">
-        <p class="gallery_tags">awaken the metabolism</p>
-        <p class="gallery_tags">energy supply</p>
-        <p class="gallery_tags">necessary ingredients</p>
-    </div>
+          <p class="gallery_tags">awaken the metabolism</p>
+          <p class="gallery_tags">energy supply</p>
+          <p class="gallery_tags">necessary ingredients</p>
+        </div>
       </li>
       <!---------------------------------- CAKE --------------------------->
       <li class="gallery__item">
         <picture class="gallery_picture">
-            <source
-              srcset="
-                ./images/gallery/cake-1x.jpg,
-                ./images/gallery/cake-2x.jpg
-              "
-              media="(min-width:1440px)"
-            />
-            <source
-                    srcset="
-                      ./images/gallery/cake-tablet-1x.jpg,
-                      ./images/gallery/cake-tablet-2x.jpg
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="./images/gallery/cake-mobile-1x.jpg,
-                    ./images/gallery/cake-mobile-2x.jpg"
-                    media="(min-width:480px)"
-                  />
-            <img
-              class="gallery__image"
-              src="./images/gallery/cake-1x.jpg"
-              alt="pancakes"
-            />
-          </picture>
-          <h3 class="gallery_description"><svg class="gallery_description-breakfast" width="16" height="16">
+          <source
+            srcset="./images/gallery/cake-1x.jpg, ./images/gallery/cake-2x.jpg"
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/cake-tablet-1x.jpg,
+              ./images/gallery/cake-tablet-2x.jpg
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/cake-mobile-1x.jpg,
+              ./images/gallery/cake-mobile-2x.jpg
+            "
+            media="(min-width:480px)"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/cake-mobile-1x.jpg"
+            alt="pancakes"
+          />
+        </picture>
+        <h3 class="gallery_description">
+          <svg class="gallery_description-breakfast" width="16" height="16">
             <use
               href="./images/icons-sprite.svg#icon-g-icon-star-desert"
-            ></use></svg>deserts</h3>
-          <div class="gallery_tags-list">
+            ></use></svg
+          >deserts
+        </h3>
+        <div class="gallery_tags-list">
           <p class="gallery_tags">awaken the metabolism</p>
           <p class="gallery_tags">energy supply</p>
           <p class="gallery_tags">necessary ingredients</p>
-      </div>
-
+        </div>
       </li>
       <!--------------------------------- TOST --------------------------------->
       <li class="gallery__item">
         <picture class="gallery_picture">
-            <source
-              srcset="
-                ./images/gallery/tost-1x.jpg,
-                ./images/gallery/tost-2x.jpg
-              "
-              media="(min-width:1440px)"
-            />
-            <source
-                    srcset="
-                      ./images/gallery/tost-tablet-1x.jpg,
-                      ./images/gallery/tost-tablet-2x.jpg
-                    "
-                    media="(min-width:768px)"
-                  />
-                  <source
-                    srcset="./images/gallery/tost-mobile-1x.jpg,
-                    ./images/gallery/tost-mobile-2x.jpg"
-                    media="(min-width:480px)"
-                  />
-            <img
-              class="gallery__image"
-              src="./images/gallery/tost-1x.jpg"
-              alt="pancakes"
-            />
-          </picture>
-          <h3 class="gallery_description"><svg class="gallery_description-breakfast" width="16" height="16">
-            <use
-              href="./images/icons-sprite.svg#icon-g-icon-dinner"
-            ></use></svg>dinners</h3>
-          <div class="gallery_tags-list">
+          <source
+            srcset="./images/gallery/tost-1x.jpg, ./images/gallery/tost-2x.jpg"
+            media="(min-width:1440px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/tost-tablet-1x.jpg,
+              ./images/gallery/tost-tablet-2x.jpg
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/tost-mobile-1x.jpg,
+              ./images/gallery/tost-mobile-2x.jpg
+            "
+            media="(min-width:480px)"
+          />
+          <img
+            class="gallery__image"
+            src="./images/gallery/tost-mobile-1x.jpg"
+            alt="pancakes"
+          />
+        </picture>
+        <h3 class="gallery_description">
+          <svg class="gallery_description-breakfast" width="16" height="16">
+            <use href="./images/icons-sprite.svg#icon-g-icon-dinner"></use></svg
+          >dinners
+        </h3>
+        <div class="gallery_tags-list">
           <p class="gallery_tags">awaken the metabolism</p>
           <p class="gallery_tags">energy supply</p>
           <p class="gallery_tags">necessary ingredients</p>
-      </div>
-
+        </div>
       </li>
     </ul>
   </div>
