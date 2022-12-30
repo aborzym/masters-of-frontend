@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0;
 }
-
+:root {
+  --t-duration: 250ms;
+  --t-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 body {
   font-family: 'Inter', sans-serif;
   background-color: $color-first;
@@ -15,4 +18,7 @@ body {
   border-style: solid;
   border-radius: 25px;
   background-color: $color-first;
+}
+.pointer {
+  cursor: pointer;
 }

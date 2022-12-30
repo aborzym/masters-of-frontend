@@ -1,14 +1,12 @@
 <div class="gallery container">
-  <!-- ----UPPER BUTTON WORKS ON MOBILE----- -->
-  <button class="button gallery__button--upper">contact us</button>
-  <!-- ----UPPER BUTTON WORKS ON MOBILE----- -->
-
+  
+  <button class="button gallery__button--bottom pointer" type="button" data-modal-open>contact us</button>
   <h2 class="gallery_title" style="position: relative">
         creating
       </h2>
-  <!-- ----BOTTOM BUTTON WORKS ON TABLET AND DESCKTOP----- -->
-  <button class="button gallery__button--bottom" style="position:relative">contact us</button>
-  <!-- ----BOTTOM BUTTON WORKS ON TABLET AND DESCKTOP----- -->
+  
+  
+
   <div class="gallery__box-list">
     <ul class="gallery__list">
       <!-------------------------- PANCAKES ----------------------------->
@@ -86,7 +84,7 @@
         <h3 class="gallery_description">
           <svg class="gallery_description-lunch" width="16" height="16">
             <use href="./images/icons-sprite.svg#icon-g-icon-square"></use></svg
-          >lunch
+          >lunches
         </h3>
         <div class="gallery_tags-list">
           <p class="gallery_tags">awaken the metabolism</p>
@@ -175,3 +173,108 @@
     </ul>
   </div>
 </div>
+<!-------------------------- MODAL ----------------------------->
+<!---------------------- MODAL WINDOW ---------------------->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <!---------------------- MODAL INPUTS ---------------------->
+
+    <p class="modal__heading">leave your details in the form below</p>
+    <form>
+      <label class="modal__label" for="name">name</label>
+      <div class="modal__input-group">
+        <!-- <span
+          ><svg class="modal__input-icon" width="12" height="12">
+            <use href="images/icons.svg#icon-icon-human"></use></svg
+        ></span> -->
+        <input
+          class="modal__input-details single-line-input"
+          id="name"
+          type="text"
+          name="name"
+          required
+        />
+      </div>
+
+      <label class="modal__label" for="phone">Telefon</label>
+
+      <div class="modal__input-group">
+        <!-- <svg class="modal__input-icon" width="13" height="13">
+          <use href="images/icons.svg#icon-earphone"></use>
+        </svg> -->
+        <input
+          class="modal__input-details single-line-input"
+          id="phone"
+          type="tel"
+          name="phone"
+          required
+        />
+      </div>
+
+      <label class="modal__label" for="email">Email</label>
+
+      <div class="modal__input-group">
+        <!-- <svg class="modal__input-icon" width="15" height="12">
+          <use href="images/icons.svg#icon-envelope-II"></use>
+        </svg> -->
+        <input
+          class="modal__input-details single-line-input"
+          id="email"
+          type="email"
+          name="email"
+          required
+        />
+      </div>
+      <label class="modal__label" for="comment">Komentarz</label>
+      <div class="modal__input-group-comment">
+        <textarea
+          class="modal__input-details multiple-line-input"
+          id="comment"
+          name="comment"
+          rows="6"
+          placeholder="Wprowadź tekst"
+          required
+        ></textarea>
+      </div>
+      <label
+        class="modal__statement pointer"
+        for="regulations-and-privacy-policy"
+      >
+        Oświadczam iż akceptuję&nbsp;<a
+          class="modal__regulations-policy"
+          href="#"
+          >Regulamin</a
+        >&nbsp;i&nbsp;
+        <a class="modal__regulations-policy" href="#"
+          >Politykę Prywatności.</a
+        ><span class="modal__square pointer"></span>
+        <input
+          class="modal__checkbox"
+          id="regulations-and-privacy-policy"
+          type="checkbox"
+          name="regulations-and-privacy-policy"
+          required
+        />
+        <span>
+          <!-- <svg class="modal__checkbox-icon" width="16" height="15">
+            <use href="images/icons.svg#icon-icon-uncheck"></use>
+          </svg> -->
+        </span>
+      </label>
+      <button
+        class="button modal__button pointer"
+        type="submit"
+        name="send"
+      >
+        Wyślij
+      </button>
+    </form>
+
+    <button class="modal__cross pointer" type="button" data-modal-close>
+      <svg class="modal__button-cross">
+        <use href="./images/modal X.svg#icon-modal-X"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+

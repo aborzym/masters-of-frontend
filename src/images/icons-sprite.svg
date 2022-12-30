@@ -1,3 +1,4 @@
+
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg"><defs>
 
 <symbol id="icon-boiled-icon-black" viewBox="0 0 113 32">
@@ -56,6 +57,11 @@
 <path fill="#e8e8e8" style="fill:var(--color1, #e8e8e8)" d="M20.879 16.805c0 3.743-2.855 6.766-6.368 6.766s-6.368-3.033-6.368-6.766 2.854-6.766 6.368-6.766 6.368 3.033 6.368 6.766z"/>
 <path fill="none" stroke="#e8e8e8" style="stroke:var(--color1, #e8e8e8)" stroke-miterlimit="10" stroke-width=".64" d="M14.512 23.571c3.517 0 6.368-3.029 6.368-6.766s-2.851-6.766-6.368-6.766c-3.517 0-6.368 3.029-6.368 6.766s2.851 6.766 6.368 6.766z"/>
 <path fill="none" stroke="#e8e8e8" style="stroke:var(--color1, #e8e8e8)" stroke-miterlimit="10" stroke-width="1.92" d="M14.222 1.694v30.222M0 16.806h28.444"/>
+
+<symbol id="icon-modal-X" viewBox="0 0 32 32">
+<path fill="none" stroke="#f5fd63" style="stroke:var(--color1, #f5fd63)" stroke-width=".64" d="M31.68 16c0 8.66-7.02 15.68-15.68 15.68S.32 24.66.32 16 7.34.32 16 .32 31.68 7.34 31.68 16z"/>
+<path fill="#f5fd63" style="fill:var(--color1, #f5fd63)" d="m11.6 6.865 4.5 7.443 4.5-7.443h2.352l-5.614 8.727 5.614 8.727H20.6l-4.5-7.205-4.5 7.205H9.259l5.545-8.727-5.545-8.727H11.6z"/></symbol>
+
 
 
 </defs></svg>
