@@ -1,3 +1,116 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+   left: 0px;
+  top: 0px;
+  transition-property: opacity, transform, visibility;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: rotate(180deg);
+}
+.modal {
+  padding: 40px;
+  max-width: 450px;
+  height: 609px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background: $color-first;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal__heading{
+font-weight: 700;
+font-size:17px;
+line-height: 20px;
+color: #3E6DD9;
+text-shadow: 3px 3px 2px rgba(232, 232, 232, 0.24);
+text-transform: uppercase;
+margin-bottom:20px;
+}
+.modal__label{
+   font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color:$color-second;
+  // text-shadow: 3px 3px 2px rgba(232, 232, 232, 0.24);
+  text-transform: uppercase;
+}
+.modal__input-group {
+  position: relative;
+  margin-bottom: 10px;
+  transition-property: fill;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  &:hover {
+    fill: $color-third;
+    border-color: $color-third;
+  }
+  &:focus {
+    fill: $color-third;
+    border-color: $color-third;
+  }
+  &:focus-within {
+    fill: $color-third;
+  }
+}
+.modal__input-group-comment {
+  position: relative;
+  &:hover {
+    fill: $color-third;
+    border-color: $color-third;
+  }
+  &:focus {
+    fill: $color-third;
+    border-color: $color-third;
+  }
+  &:focus-within {
+    fill: $color-third;
+  }
+}
+.modal__button-cross {
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  display: flex;
+  width: 18px;
+  height: 18px;
+ 
+}
+.modal__cross {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 3;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  // fill:white;
+  // stroke:white;
+  background-color: rgba(255, 0, 0, 0);
+  transition-property: fill, border;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  &:hover,
+  &:focus {
+    fill: $color-third;
+  }
+}
 .gallery {
   background-color: $color-first;
 }
@@ -49,13 +162,17 @@
   color: $color-second;
   border-color: $color-second;
 }
-.gallery__button--upper {
+.gallery__button--bottom {
   @extend .gallery__button;
   margin: 0 auto 30px;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  transition-property: color, background-color;
 }
-.gallery__button--bottom {
-  display: none;
-  @extend .gallery__button;
+.gallery__button--bottom:hover,
+.gallery__button--bottom:focus {
+  background-color: $color-second;
+    color: $color-first;
 }
 
 .gallery__list {
@@ -140,9 +257,18 @@
   }
   .gallery__button--bottom {
     display: flex;
-    margin-left: 550px;
-    margin-bottom: 35px;
+    margin:0 auto 35px;
+    // margin-bottom: 35px;
+    transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  transition-property: color, background-color;
   }
+  .gallery__button--bottom:hover,
+  .gallery__button--bottom:focus {
+    background-color: $color-second;
+      color: $color-first;
+  }
+
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
@@ -169,29 +295,30 @@
 @media screen and (min-width: 1440px) {
   //------------------------ MAIN TITLE
   .gallery_title {
-    padding-left: 150px;
+    padding-left: 160px;
     font-size: 56px;
     line-height: 60px;
-    margin-bottom: -20px;
+    margin-bottom: 50px;
   }
   //------------------------ MAIN TITLE
   .gallery_title::before {
     content: 'work';
-    left: 70px;
+    left: 75px;
     top: 5px;
     font-size: 28px;
     line-height: 30px;
   }
   .gallery_title::after {
     content: 'with attention to details';
-    left: 70px;
+    left: 75px;
     top: 30px;
     font-size: 56px;
     line-height: 60px;
   }
   .gallery__button--bottom {
+    position: relative;
     margin-left: 1200px;
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
   .gallery__button--bottom::after {
     content: "";
