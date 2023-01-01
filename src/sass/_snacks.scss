@@ -1,0 +1,181 @@
+.snacks {
+  background-color: $color-first;
+}
+.snacks__title {
+  color: $color-second;
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 30px;
+}
+.snacks__title--first,
+.snacks__title--second,
+.snacks__title--third,
+.snacks__title--fourth {
+  @extend .snacks__title;
+}
+.snacks__title--first {
+  padding-left: 200px;
+}
+.snacks__title--second {
+  padding-left: 150px;
+}
+.snacks__title--third {
+  padding-left: 200px;
+}
+.snacks__title--fourth {
+  padding-left: 150px;
+}
+.snacks__title--icon-left {
+  position: absolute;
+  top: 0;
+  left: 170px;
+  width: 28px;
+  height: 28px;
+}
+.snacks__title--icon-right {
+  position: absolute;
+  top: 0;
+  left: 380px;
+  width: 28px;
+  height: 28px;
+}
+@media screen and (min-width: 768px) {
+  .snacks__title {
+    font-size: 40px;
+    line-height: 43px;
+  }
+  .snacks__title--first {
+    padding-left: 370px;
+  }
+  .snacks__title--second {
+    padding-left: 310px;
+  }
+  .snacks__title--third {
+    padding-left: 370px;
+  }
+  .snacks__title--fourth {
+    padding-left: 310px;
+  }
+  .snacks__title--icon-left {
+    position: absolute;
+    top: 0;
+    left: 320px;
+    width: 40px;
+    height: 40px;
+  }
+  .snacks__title--icon-right {
+    position: absolute;
+    top: 0;
+    left: 630px;
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .snacks__title {
+    font-size: 56px;
+    line-height: 67px;
+  }
+  .snacks__title--first {
+    padding-left: 850px;
+  }
+  .snacks__title--second {
+    padding-left: 750px;
+  }
+  .snacks__title--third {
+    padding-left: 850px;
+  }
+  .snacks__title--fourth {
+    padding-left: 750px;
+  }
+  .snacks__title--icon-left {
+    position: absolute;
+    top: 5px;
+    left: 780px;
+    width: 56px;
+    height: 56px;
+  }
+  .snacks__title--icon-right {
+    position: absolute;
+    top: 5px;
+    left: 1210px;
+    width: 56px;
+    height: 56px;
+  }
+}
+// PICTURE
+
+.snack__banner {
+   max-width: 480px;
+  height: 203px;
+  background-image: 
+//   linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+    url(../images/snacks/snacks-mobile-1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .snack__banner {
+    background-image: 
+    // linear-gradient(
+    //     rgba(47, 48, 58, 0.4),
+    //     rgba(47, 48, 58, 0.4)
+    //   ),
+      url(../images/snacks/snacks-mobile-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .snack__banner {
+    max-width: 768px;
+    height: 325px;
+    background-image: 
+    //   linear-gradient(
+    //       rgba(47, 48, 58, 0.4),
+    //       rgba(47, 48, 58, 0.4)
+    //     ),
+      url(../images/snacks/snacks-tablet-1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .snack__banner {
+      background-image: 
+        // linear-gradient(
+        //     rgba(47, 48, 58, 0.4),
+        //     rgba(47, 48, 58, 0.4)
+        //   ),
+        url(../images/snacks/snacks-tablet-2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .snack__banner {
+    // padding-block: 200px;
+    max-width: 1440px;
+    height: 610px;
+    background-image: 
+    //   linear-gradient(
+    //       rgba(47, 48, 58, 0.4),
+    //       rgba(47, 48, 58, 0.4)
+    //     ),
+      url(../images/snacks/snacks-1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .snack__banner {
+      background-image: 
+        // linear-gradient(
+        //     rgba(47, 48, 58, 0.4),
+        //     rgba(47, 48, 58, 0.4)
+        //   ),
+        url(../images/snacks/snacks-2x.jpg);
+    }
+  }
+}
