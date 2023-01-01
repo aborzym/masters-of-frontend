@@ -1,44 +1,60 @@
-<div class="header container">
-  <section class="header-menu">
-    <a href="#" class="header-menu__logo">
-      <img src="./images/boiled-icon-yellow.svg" alt="logo boiled" />
-    </a>
-    <nav>
-      <ul class="header-menu__nav list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Drinks</a></li>
-        <li><a href="#">Healthy</a> Food</li>
-        <li><a href="#">Herbs & Spices</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="header-menu__icons">
-      <a href="#" class="header-menu__scheme-icon"></a>
+<div class="header">
+  <div class="container">
+    <section class="header-menu">
+      <a href="#" class="header-menu__logo">
+        <img src="./images/boiled-icon-yellow.svg" alt="logo boiled" />
+      </a>
+      <nav>
+        <ul class="header-menu__nav list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Drinks</a></li>
+          <li><a href="#">Healthy</a> Food</li>
+          <li><a href="#">Herbs & Spices</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu__icons">
+        <a href="#" class="header-menu__scheme-icon"></a>
 
-      <button
-        class="mobile-menu-button js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
-        <img
-          class="header-menu__burger-icon"
-          src="./images/header/burger.svg"
-          alt="icon-burger"
-        />
-        <!-- <svg class="header-menu__burger-icon">
+        <button
+          class="mobile-menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <img
+            class="header-menu__burger-icon"
+            src="./images/header/burger.svg"
+            alt="icon-burger"
+          />
+          <!-- <svg class="header-menu__burger-icon">
         <use href="./images/header/burger.svg"></use>
       </svg> -->
-      </button>
+        </button>
+      </div>
+    </section>
+    <div class="header__star">
+      <svg width="21" height="21">
+        <use href="./images/icons-sprite.svg#icon-star-icon-yellow"></use>
+      </svg>
     </div>
-  </section>
+  </div>
+
+  <div class="header-wrapper">
+    <h1 class="header-wrapper__title container">
+      Boiled
+      <div class="header-wrapper__title--span">with</div>
+      the passion
+    </h1>
+    <div class="header-wrapper__title--after">creativity</div>
+  </div>
 </div>
 <!-- =============== MOBILE MENU ================  -->
 <!-- 
 <div class="menu-container js-menu-container" id="mobile-menu">
   <div>
     <a href="#" class="header-menu__scheme-icon"></a>
-    <button class="menu-toggle js-close-menu">
+    <button class="menu-toggle js-close-menu"> 
       <svg
         fill="currentColor"
         viewBox="0 0 20 20"
