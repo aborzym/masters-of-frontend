@@ -4,7 +4,7 @@
   position: fixed;
   z-index: 1;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-   left: 0px;
+  left: 0px;
   top: 0px;
   transition-property: opacity, transform, visibility;
   transition-duration: var(--t-duration);
@@ -30,22 +30,52 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.modal__heading{
-font-weight: 700;
-font-size:17px;
-line-height: 20px;
-color: #3E6DD9;
-text-shadow: 3px 3px 2px rgba(232, 232, 232, 0.24);
-text-transform: uppercase;
-margin-bottom:20px;
-}
-.modal__label{
-   font-weight: 400;
-  font-size: 12px;
+.modal__heading {
+  font-weight: 700;
+  font-size: 17px;
   line-height: 20px;
-  color:$color-second;
-  // text-shadow: 3px 3px 2px rgba(232, 232, 232, 0.24);
+  color: $color-third;
+  text-shadow: 3px 3px 2px rgba(232, 232, 232, 0.24);
   text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.modal__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: $color-second;
+  // text-shadow: 3px 3px 2px rgba(232, 232, 232, 0.24);
+  margin-bottom: 4px;
+  display: block;
+  letter-spacing: 0.01em;
+  resize: none;
+  text-transform: capitalize;
+}
+.modal__input-details {
+  display: flex;
+  justify-content: center;
+  width: 75vw;
+  max-width: 370px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  outline-color: $color-third;
+  transition-property: border-color;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  &:hover {
+    border-color: $color-third;
+  }
+}
+.single-line-input {
+  padding-left: 42px;
+  height: 40px;
+}
+.multiple-line-input {
+  margin-bottom: 0px;
+  padding-top: 15px;
+  padding-left: 16px;
 }
 .modal__input-group {
   position: relative;
@@ -79,6 +109,32 @@ margin-bottom:20px;
     fill: $color-third;
   }
 }
+textarea[id='comment'].modal__input-details::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__statement {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-left: 25px;
+  position: relative;
+  /* background-color:aquamarine; */
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  flex-wrap: wrap;
+  justify-content: left;
+  font-weight: 400;
+  line-height: 1.71;
+  color: $color-second;
+}
+.modal__regulations-policy {
+  color: $color-third;
+  text-decoration: none;
+}
 .modal__button-cross {
   position: absolute;
   top: 20%;
@@ -86,8 +142,24 @@ margin-bottom:20px;
   display: flex;
   width: 18px;
   height: 18px;
- 
 }
+
+.modal__button--gallery {
+  display: flex;
+  color: $color-second;
+  border-color: $color-second;
+  background-color: $color-first;
+  margin: 0 auto;
+  transition-duration: var(--t-duration);
+  transition-timing-function: var(--t-timing-function);
+  transition-property: color, background-color;
+}
+.modal__button--gallery:hover,
+.modal__button--gallery:focus {
+  background-color: $color-second;
+  color: $color-first;
+}
+
 .modal__cross {
   margin: 0;
   padding: 0;
@@ -100,8 +172,6 @@ margin-bottom:20px;
   height: 30px;
   border: 1px solid white;
   border-radius: 50%;
-  // fill:white;
-  // stroke:white;
   background-color: rgba(255, 0, 0, 0);
   transition-property: fill, border;
   transition-duration: var(--t-duration);
@@ -140,7 +210,7 @@ margin-bottom:20px;
   line-height: 15px;
   display: flex;
   align-items: center;
-  color:$color-second;
+  color: $color-second;
 }
 .gallery_title::after {
   content: 'with attention to details';
@@ -172,7 +242,7 @@ margin-bottom:20px;
 .gallery__button--bottom:hover,
 .gallery__button--bottom:focus {
   background-color: $color-second;
-    color: $color-first;
+  color: $color-first;
 }
 
 .gallery__list {
@@ -190,34 +260,34 @@ margin-bottom:20px;
 }
 
 .gallery_description {
-    position:relative;
+  position: relative;
   text-transform: uppercase;
   color: $color-second;
-  margin-bottom:5px;
+  margin-bottom: 5px;
   margin-left: 30px;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .gallery_description-breakfast {
-  position:absolute;
-  top:4px;
-  left:-30px;
- }
- .gallery_description-lunch {
-  position:absolute;
+  position: absolute;
+  top: 4px;
+  left: -30px;
+}
+.gallery_description-lunch {
+  position: absolute;
   top: 3px;
-  left:-30px;
- }
- .gallery_description-desert {
-  position:absolute;
-  top:2px;
-  left:-30px;
- }
- .gallery_description-dinner {
-  position:absolute;
-  top:2px;
-  left:-30px;
- }
+  left: -30px;
+}
+.gallery_description-desert {
+  position: absolute;
+  top: 2px;
+  left: -30px;
+}
+.gallery_description-dinner {
+  position: absolute;
+  top: 2px;
+  left: -30px;
+}
 .gallery_tags {
   display: none;
 }
@@ -257,16 +327,16 @@ margin-bottom:20px;
   }
   .gallery__button--bottom {
     display: flex;
-    margin:0 auto 35px;
+    margin: 0 auto 35px;
     // margin-bottom: 35px;
     transition-duration: var(--t-duration);
-  transition-timing-function: var(--t-timing-function);
-  transition-property: color, background-color;
+    transition-timing-function: var(--t-timing-function);
+    transition-property: color, background-color;
   }
   .gallery__button--bottom:hover,
   .gallery__button--bottom:focus {
     background-color: $color-second;
-      color: $color-first;
+    color: $color-first;
   }
 
   .gallery__list {
@@ -321,15 +391,15 @@ margin-bottom:20px;
     margin-bottom: 0;
   }
   .gallery__button--bottom::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 55px;
     height: 55px;
     background-color: $color-second;
     border: 1px solid $color-second;
-    top:40px;
-    right:-40px;
-      }
+    top: 40px;
+    right: -40px;
+  }
   .gallery__list {
     padding-inline: 70px;
   }
@@ -338,15 +408,15 @@ margin-bottom:20px;
     align-items: center;
   }
   .gallery_description {
-    margin-top:10px;
-    margin-bottom:20px;
-    margin-left:30px;
-     }
-   
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+
   .gallery_tags-list {
     display: flex;
-    margin-bottom:50px;
-      }
+    margin-bottom: 50px;
+  }
 
   .gallery_tags {
     display: flex;
