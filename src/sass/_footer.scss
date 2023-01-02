@@ -1,0 +1,58 @@
+.footer{
+background-color: $color-first;
+}
+.footer__first-line{
+    display:flex;
+   font-size: 11px;
+line-height: 1.5;
+text-transform: capitalize;
+justify-content: center;
+}
+.footer__subtitle{
+    color:$color-second;
+    margin-inline:50px;
+}
+.footer__second-line{
+    display:flex;
+   font-size: 12px;
+line-height: 1.2; 
+text-transform: uppercase;
+justify-content: center;
+}
+.footer__title{
+    color:$color-second;
+    margin-inline:30px;
+}
+.footer__third-line{
+    display: flex;
+    justify-content: center;
+}
+.footer__icon{
+    margin-inline:40px;
+}
+.footer__instagram,
+.footer__facebook,
+.footer__linkedin,
+.footer__pinterest,
+.footer__spotify,
+.footer__youtube{
+    @extend .footer__icon;
+    }
+.footer__instagram{
+    fill:$color-second;
+}
+.footer__facebook{
+
+}
+.footer__linkedin{
+
+}
+.footer__pinterest{
+
+}
+.footer__spotify{
+
+}
+.footer__youtube{
+
+}
