@@ -8,7 +8,8 @@
   flex-direction: column;
   border: 1px solid $color-fourth;
   width: 420px;
-  padding-inline: 38px;
+  padding: 12px 38px 40px;
+
   transform: translateX(100%);
   // FIXME
   transition: transform 250ms ease-in-out;
@@ -21,7 +22,6 @@
 .menu-container__header {
   display: flex;
   justify-content: space-between;
-  padding-top: 12px;
   margin-bottom: 80px;
 }
 .mobile-menu {
@@ -38,6 +38,11 @@
     font-size: 20px;
     line-height: 1.4;
   }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: $color-fourth;
+  }
 }
 
 .mobile-menu__scheme-icon {
@@ -48,6 +53,7 @@
 
 .mobile-menu__socials {
   display: flex;
+  gap: 25px;
   flex-direction: row;
   justify-content: center;
 }
