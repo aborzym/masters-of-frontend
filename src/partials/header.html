@@ -51,21 +51,11 @@
 </div>
 <!-- =============== MOBILE MENU ================  -->
 <div class="menu-container js-menu-container" id="mobile-menu">
-  <div>
-    <a href="#" class="header-menu__scheme-icon"></a>
+  <div class="menu-container__header">
+    <a href="#" class="mobile-menu__scheme-icon"></a>
     <button class="menu-toggle js-close-menu">
-      <svg
-        fill="currentColor"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-          clip-rule="evenodd"
-        ></path>
+      <svg class="modal-menu__close-icon">
+        <use href="./images/icons-sprite.svg#icon-modal-close"></use>
       </svg>
     </button>
   </div>
@@ -80,4 +70,27 @@
       <li>Contact</li>
     </ul>
   </div>
+  <ul class="mobile-menu__socials list">
+    <li>
+      <svg>
+        <use></use>
+      </svg>
+    </li>
+    <li>
+      <svg>
+        <use></use>
+      </svg>
+    </li>
+    <li>
+      <svg>
+        <use></use>
+      </svg>
+    </li>
+    <li>
+      <svg>
+        <use></use>
+      </svg>
+    </li>
+  </list>
+  </ul>
 </div>
