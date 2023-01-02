@@ -1,0 +1,113 @@
+.header {
+  color: $color-fourth;
+}
+
+.header-menu__logo {
+  @media screen and(max-width: 767px) {
+    display: block;
+    text-align: center;
+  }
+}
+.header-menu {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  position: relative;
+
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    padding-inline: 85px;
+  }
+
+  &__nav {
+    display: none;
+    @media screen and(min-width: $desktop) {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+}
+.header-menu__icons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.header-menu__scheme-icon {
+  width: 45px;
+  height: 45px;
+  background-image: url(../images/header/icon-sun.svg);
+  display: none;
+}
+
+.header-menu__burger-icon {
+  width: 38px;
+  height: 35px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  @media screen and(min-width: $tablet) {
+  }
+}
+
+.mobile-menu-button {
+  background-color: $color-first;
+  border: none;
+  cursor: pointer;
+}
+.header__star {
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 38px;
+}
+.header-wrapper {
+  width: 100%;
+  // FIXME
+  height: 400px;
+  background-image: url(../images/header/hy.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header-wrapper__title {
+  text-align: center;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.48;
+  letter-spacing: 3px;
+  position: relative;
+
+  &--span {
+    margin: 0 auto;
+    text-align: left;
+    width: 50px;
+    padding-left: 4px;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.9;
+    color: $color-first;
+    background-color: $color-fourth;
+    letter-spacing: 1.6px;
+  }
+  &--after {
+    text-align: left;
+    width: 120px;
+    padding-left: 4px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 1.9;
+    color: $color-first;
+    background-color: $color-fourth;
+    letter-spacing: 1.6px;
+    position: absolute;
+    right: 70px;
+  }
+}

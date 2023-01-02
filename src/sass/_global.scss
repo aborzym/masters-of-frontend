@@ -6,9 +6,15 @@
   --t-duration: 250ms;
   --t-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  background-color: $color-third;
+  background-color: $color-first;
 }
 
 .button {
@@ -21,4 +27,7 @@ body {
 }
 .pointer {
   cursor: pointer;
+}
+.list {
+  list-style-type: none;
 }
