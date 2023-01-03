@@ -18,12 +18,14 @@
   transform: rotate(180deg);
 }
 .modal {
+  position:fixed;
   padding: 40px;
   max-width: 450px;
   height: 609px;
   position: absolute;
   left: 50%;
-  top: 50%;
+  // top: 50%;
+  top:15%;
   transform: translate(-50%, -50%);
   z-index: 2;
   background: $color-first;
