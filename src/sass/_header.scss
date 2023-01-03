@@ -92,19 +92,21 @@
 }
 
 .header-wrapper__title {
-  max-width: 370px;
+  max-width: 400px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 6%;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 48px;
-  line-height: 1.48;
-  letter-spacing: 3px;
+  font-size: 6.5vw;
+  line-height: 2em;
+  letter-spacing: 0.1em;
   position: relative;
   @media screen and(min-width: $tablet) {
     position: relative;
     max-width: 100%;
+    padding-top: 20px;
     font-size: 65px;
+    line-height: 1.2;
     letter-spacing: 1.6px;
   }
   @media screen and(min-width: $desktop) {
