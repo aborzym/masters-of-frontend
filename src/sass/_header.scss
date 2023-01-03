@@ -79,20 +79,14 @@
 }
 .header-wrapper {
   width: 100%;
-  // FIXME
-  height: 400px;
+  height: 50vw;
   background-image: url(../images/header/hy.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  @media screen and(min-width: $tablet) {
-    margin: 0 auto;
-    width: 650px;
-    height: 300px;
-  }
 }
 
 .header-wrapper__title {
-  max-width: 400px;
+  max-width: 100%;
   text-align: center;
   padding-top: 6%;
   text-transform: uppercase;
@@ -101,62 +95,60 @@
   line-height: 2em;
   letter-spacing: 0.1em;
   position: relative;
-  @media screen and(min-width: $tablet) {
-    position: relative;
-    max-width: 100%;
-    padding-top: 20px;
-    font-size: 65px;
-    line-height: 1.2;
-    letter-spacing: 1.6px;
-  }
-  @media screen and(min-width: $desktop) {
-    font-size: 80px;
-    line-height: 1.2;
-  }
-  &--span {
+  // @media screen and(min-width: $tablet) {
+  //   position: relative;
+  //   max-width: 100%;
+  //   padding-top: 20px;
+  //   font-size: 65px;
+  //   line-height: 1.2;
+  //   letter-spacing: 1.6px;
+  // }
+  // @media screen and(min-width: $desktop) {
+  //   font-size: 80px;
+  //   line-height: 1.2;
+  // }
+  &--first {
     margin: 0 auto;
     text-align: left;
-    width: 50px;
-    padding-left: 4px;
+    width: 8vw;
+    padding-left: 0.5em;
     font-weight: 400;
-    font-size: 9px;
+    font-size: 1.5vw;
     line-height: 1.9;
     color: $color-first;
     background-color: $color-fourth;
     letter-spacing: 1.6px;
-    @media screen and(min-width: $tablet) {
-      width: 70px;
-      font-size: 10px;
-    }
-    @media screen and(min-width: $desktop) {
-      width: 80px;
-      font-size: 12px;
-    }
+    //   @media screen and(min-width: $tablet) {
+    //     width: 70px;
+    //     font-size: 10px;
+    //   }
+    //   @media screen and(min-width: $desktop) {
+    //     width: 80px;
+    //     font-size: 12px;
+    //   }
   }
 
-  &:after {
-    content: 'creativity';
+  &--second {
+    margin: 0 auto;
+    right: 6vw;
     text-align: left;
-    width: 120px;
-    padding-left: 4px;
+    width: 16vw;
+    padding-left: 0.5em;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 9px;
+    font-size: 1.5vw;
     line-height: 1.9;
     color: $color-first;
     background-color: $color-fourth;
     letter-spacing: 1.6px;
-    position: absolute;
-    right: 10px;
-    top: 100%;
-    @media screen and(min-width: $tablet) {
-      right: 140px;
-      font-size: 10px;
-    }
-    @media screen and(min-width: $desktop) {
-      right: 100px;
-      width: 140px;
-      font-size: 12px;
-    }
+    // @media screen and(min-width: $tablet) {
+    //   right: 140px;
+    //   font-size: 10px;
+    // }
+    // @media screen and(min-width: $desktop) {
+    //   right: 100px;
+    //   width: 140px;
+    //   font-size: 12px;
+    // }
   }
 }
